@@ -58,11 +58,6 @@ const TickersData = () => {
       }
     }
   };
-  // const setDefaultHandler = () => {
-  //   setTimeout(() => {
-  //     dispatch(setRefreshInterval(intervalTime));
-  //   }, 100);
-  // }
   return (
     <>
       {tickers.length === 0 && <button className={buttonClass} onClick={addAllHandler}>Off Tickers</button>}
@@ -77,7 +72,6 @@ const TickersData = () => {
         aria-label="intervalInput"
         
       /> }
-      {/* {tickers.length === 0 && <button className={buttonClass} onClick={setDefaultHandler}>Apply Changes</button>} */}
       {tickers.length === 0 && <div className="heading-block max-w-3xl">
         {contentHeader}
       </div>}
